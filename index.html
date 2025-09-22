@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cameron Walker Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #112; color: #eee; }
+    header { background: #223; padding: 20px; text-align: center; }
+    h1 { margin: 0; }
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 20px; }
+    .card { background: #1e1e2e; border-radius: 10px; padding: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.5); }
+    .card img { max-width: 100%; border-radius: 10px; }
+    .card h2 { margin-top: 10px; }
+    a { color: #4da3ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Featured project section */
+    .featured { background: #112; padding: 40px 20px; margin-top: 40px; }
+    .featured h2 { text-align: center; margin-bottom: 20px; }
+    .featured-content { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; align-items: flex-start; }
+    .videos { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; flex: 1; min-width: 300px; }
+    iframe { width: 100%; height: 600px; border: none; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.5); }
+    @media(max-width: 768px) {
+      .featured-content { flex-direction: column; align-items: center; }
+      .videos { grid-template-columns: 1fr; }
+    }
+
+
+    /* Contribution section */
+    .contributions { max-width: 900px; margin: 40px auto 0; padding: 20px; background: #1e1e2e; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.5); }
+    .contributions h3 { margin-top: 0; text-align: center; }
+    .contributions ul { list-style: none; padding: 0; }
+    .contributions li { margin: 10px 0; padding-left: 15px; position: relative; }
+    .contributions li::before { content: "•"; position: absolute; left: 0; color: #4da3ff; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cameron Walker Portfolio</h1>
+  </header>
+  <section class="projects">
+    <div class="card">
+      <img src="project1.png" alt="Project 1 Screenshot">
+      <h2>DES315 - Slay 'n Sauté</h2>
+      <p>After mysterious portals brought strange creatures into the world, dropout chef Pauline seizes the chance to turn them into daring new dishes. Slay 'n Sauté blends turn-based combat, cooking simulation, and narrative exploration as players hunt mythical beasts, harvest ingredients, and serve up unprecedented cuisine.
+Built in Unity.</p>
+      <a href="https://pirate-penguin-games.itch.io/slay-n-saute" target="_blank">View on itch.io</a>
+    </div>
+    <div class="card">
+      <img src="concept.png" alt="Project 2 Screenshot">
+      <h2>Defensio et Impetum (WIP)</h2>
+      <p>A real time strategy game, Total War meets Europa Universalis. Build armies, fortify strongholds, and strategise to defend and attack your enemies in a procedurally generated medieval world. Built in Unity.</p>
+      <a>View on GitHub</a>
+    </div>
+  </section>
+
+  <section class="featured">
+    <h2>Featured Project: DES315 - Slay 'n Sauté</h2>
+    <div class="featured-content">
+      <div class="videos">
+        <iframe src="https://www.youtube.com/embed/rlMJf4JdGJI" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/5Gmt9dW1fM0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- Contributions -->
+    <div class="contributions">
+      <h3>My Contributions</h3>
+      <ul>
+        <li><strong>Programming:</strong> Focused on audio programming and contributed to smaller programming tasks across different parts of the project.</li>
+        <li><strong>3D Modelling & Texturing:</strong> Created models and textures for game assets using Blender and implemented to Unity.</li>
+        <li><strong>Graphics Programming / Shaders:</strong> Developed and implemented material shaders and post process shaders in Unity.</li>
+        <li><strong>Audio Design & Programming:</strong> Designed sound effects and integrated audio systems into Unity.</li>
+      </ul>
+    </div>
+    <p style="text-align:center; margin-top:20px;">
+      <a href="https://pirate-penguin-games.itch.io/slay-n-saute" target="_blank">View on itch.io</a>
+    </p>
+  </section>
+</body>
+</html>
